@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo" href="#">
+      <img class="logo__img" src="./img/logo.png" alt="Superpoint logo">
+    </a>
+    <div class="header__content">
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">Feedback</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Help </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="login-box">
+        <div class="login-box__name">John Johnson</div>
+        <button class="login-box__btn">
+          <img src="./img/arrow-down.png" alt="">
+        </button>
+        <img class="login-box__img" src="./img/avatar.png" alt="user avatar">
+      </div>
+    </div>
+  </header>
+  <main class="">
+    <div class="wrapper">
+      <aside class="sidebar">
+        <div class="sidebar__toggle">
+          <img class="sidebar__img" src="./img/arrow-toggle.png" alt="">
+        </div>
+        <ul class="sidebar__list">
+          <li class="sidebar__item current">
+            <img class="sidebar__img sidebar__img--active" src="./img/point1.png" alt="point 1">
+            <span class="sidebar__item-name">Point 1</span>
+          </li>
+          <li class="sidebar__item">
+            <img class="sidebar__img" src="./img/point2.png" alt="point 2">
+            <span class="sidebar__item-name">Point 2</span>
+          </li>
+          <li class="sidebar__item">
+            <img class="sidebar__img" src="./img/point3.png" alt="point 3">
+            <span class="sidebar__item-name">Point 3</span>
+          </li>
+          <li class="sidebar__item">
+            <img class="sidebar__img" src="./img/point4.png" alt="point 4">
+            <span class="sidebar__item-name">Point 4</span>
+          </li>
+          <li class="sidebar__item">
+            <img class="sidebar__img" src="./img/point5.png" alt="point 5">
+            <span class="sidebar__item-name">Point 5</span>
+          </li>
+          <li class="sidebar__item">
+            <img class="sidebar__img" src="./img/point6.png" alt="point 6">
+            <span class="sidebar__item-name">Point 6</span>
+          </li>
+        </ul>
+      </aside>
+      <div class="content">
+        <div class="progress-steps step-progress">
+          <div class="progress-steps__item progress-steps__item--done">
+            <div class="progress-steps__item-inner">
+              <div class="progress-steps__item-name">1.<span>Step</span></div>
+              <img src="./img/step1.png" alt="">
+            </div>
+          </div>
+          <div class="progress-steps__item progress-steps__item--done">
+            <div class="progress-steps__item-inner">
+              <div class="progress-steps__item-name">2.<span>Step</span></div>
+              <img src="./img/step2.png" alt="">
+            </div>
+          </div>
+          <div class="progress-steps__item progress-steps__item--process">
+            <div class="progress-steps__item-inner">
+              <div class="progress-steps__item-name">3.<span>Step</span></div>
+              <img src="./img/step3.png" alt="">
+            </div>
+          </div>
+          <div class="progress-steps__item">
+            <div class="progress-steps__item-inner">
+              <div class="progress-steps__item-name">4.<span>Step</span></div>
+              <img src="./img/step4.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="shipping">
+          <form class="shipping-form" action="#" method="post" id="shipping-form">
+            <div class="shipper-details">
+              <div class="shipper-title title">Shipper Details</div>
+              <div class="shipping-form-group">
+                <div class="shipping-form-control search-box">
+                  <input class="shipping-form__input search-box__input input" type="text" id="search-company"
+                    name="company" placeholder=" ">
+                  <label class="shipping-form__label" for="search-company">Company Autocomplete</label>
+                </div>
+                <div class="shipping-form-control">
+                  <input class="shipping-form__input search-box__input input" id="company-name" name="company-name"
+                    placeholder=" " type="text">
+                  <label class="shipping-form__label" for="company-name">Company name</label>
+                </div>
+              </div>
+            </div>
+            <div class="shipment-details">
+              <div class="shipment-title title">Shipment Details</div>
+              <table class="shipment-details__table">
+                <thead>
+                  <tr>
+                    <th class="handing-cloumn">Handling Unit Type (H/U)</th>
+                    <th class="quantity-cloumn"># of H/U</th>
+                    <th class="dimensions-cloumn">H/U Dimensions</th>
+                    <th class="stackable-cloumn">Stackable</th>
+                    <th class="description-cloumn">Commodity Description</th>
+                    <th class="nmfc-cloumn">NMFC</th>
+                    <th class="class-cloumn">Class</th>
+                    <th class="pieces-cloumn"># of Pieces</th>
+                    <th class="weight-cloumn">Total Weight</th>
+                    <th class="hazmat-cloumn">HazMat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="product-row">
+                    <td>Pallets</td>
+                    <td>3</td>
+                    <td>15 х 25 х 23 in</td>
+                    <td>Yes</td>
+                    <td class="search-cell">
+                      <div class="search-box">
+                        <input class="search-box__input input" type="text" placeholder="Multigrain Snacks..., 300"
+                          name="product" form="shipping-form">
+                      </div>
+                    </td>
+                    <td><input class="input nmfc-input" type="text" placeholder="NMFC" form="shipping-form" name="nmfc">
+                    </td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>400lbs</td>
+                    <td>
+                      <div class="checkbox">
+                        <label class="checkbox__label">
+                          <input class="checkbox__input input" type="checkbox" form="shipping-form" name="hazmat">
+                          <span class="checkbox__custom"></span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="product-row">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="search-cell">
+                      <div class="search-box">
+                        <input class="search-box__input input" type="text" placeholder="Multigrain Snacks..., 300"
+                          name="product" value="" form="shipping-form">
+                      </div>
+                    </td>
+                    <td><input class="input nmfc-input" placeholder="NMFC" type="text" name="nmfc" value=""></td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>400lbs</td>
+                    <td>
+                      <div class="checkbox">
+                        <label class="checkbox__label">
+                          <input class="checkbox__input input" type="checkbox" name="hazmat" checked
+                            form="shipping-form">
+                          <span class="checkbox__custom"></span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="extra-info">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td colspan="6" class="extra-info__cell">
+                      <div class="form-group">
+                        <div class="select-box un-select">
+                          <select class="select-box__select" name="un" id="" form="shipping-form">
+                            <option value="hidden" disabled selected hidden>UN</option>
+                            <option value="ART">ART</option>
+                            <option value="PLO">PLO</option>
+                          </select>
+                        </div>
+                        <input type="text" class="input un-number-input" placeholder="UN Number" name="un-number"
+                          form="shipping-form" />
+                        <input type="text" class="input shipping-name-input" placeholder="Proper Shipping Name"
+                          name="shipping-name" form="shipping-form" />
+                        <label>
+                          <input type="text" class="input hazard-class-input" placeholder="Hazard Class"
+                            form="shipping-form" name="hazard-name" /><span><img src="./img/question.png" alt=""></span>
+                        </label>
+                        <div class="select-box packing-select">
+                          <select class="select-box__select" name="packing-group" id="" form="shipping-form">
+                            <option value="hidden" disabled selected hidden>Packing Group</option>
+                            <option value="1">option1</option>
+                            <option value="2">option2</option>
+                          </select>
+                        </div>
+                        <div class="select-box packing-select">
+                          <select class="select-box__select" name="packing-type" value="" id="" form="shipping-form">
+                            <option value="hidden" disabled selected hidden>Packing Type</option>
+                            <option value="1">option1</option>
+                            <option value="2">option2</option>
+                          </select>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="product-row">
+                    <td>Pallets</td>
+                    <td>3</td>
+                    <td>15 х 25 х 23 in</td>
+                    <td>Yes</td>
+                    <td class="search-cell">
+                      <div class="search-box">
+                        <input class="search-box__input input" type="text" placeholder="Multigrain Snacks..., 300"
+                          name="product" form="shipping-form">
+                    </td>
+                    <td><input class="input nmfc-input" placeholder="NMFC" name="nmfc" type="text">
+            </div>
+            </td>
+            <td>1</td>
+            <td>1</td>
+            <td>400lbs</td>
+            <td>
+              <div class="checkbox">
+                <label class="checkbox__label">
+                  <input class="checkbox__input input" type="checkbox" name="hazmat" form="shipping-form">
+                  <span class="checkbox__custom"></span>
+                </label>
+              </div>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+        <div class="agreement">
+          <div class="checkbox">
+            <label class="checkbox__label">
+              <input class="checkbox__input input" type="checkbox" name="agreement" form="shipping-form">
+              <span class="checkbox__custom agreement-checkbox"></span>
+              I agree to the <a>Term and Conditions</a>
+            </label>
+          </div>
+        </div>
+        <button class="shipping-form__btn" type="submit">Dispatch</button>
+        </form>
+      </div>
+    </div>
+    </div>
+  </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
